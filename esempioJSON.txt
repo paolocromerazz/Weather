@@ -1,0 +1,42 @@
+{
+    "coord": {
+        "lon": 7.06,
+        "lat": 45.06
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F01d.png?1499366022009"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 20.26,
+        "pressure": 1009,
+        "humidity": 40,
+        "temp_min": 18,
+        "temp_max": 22
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.6,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1507288800,
+    "sys": {
+        "type": 1,
+        "id": 5795,
+        "message": 0.0043,
+        "country": "IT",
+        "sunrise": 1507268201,
+        "sunset": 1507309317
+    },
+    "id": 6535425,
+    "name": "Usseaux",
+    "cod": 200
+}

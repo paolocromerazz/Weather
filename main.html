@@ -5,28 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@1.9.641/build/pdf.min.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./main.css">
     <title>main.html</title>
 </head>
 
 <body>
     <div class="someButton">
-        <span class="icon-stack twitter-share-button">
-    <i class="icon-check-empty icon-stack-base"></i>
-    <i class="icon-twitter"></i>
-</span>
-        <span class="icon-stack coffee-button">
-    <i class="icon-check-empty icon-stack-base"></i>
-    <i class="icon-coffee"></i>
-</span>
+        <!--i class="fa fa-free-code-camp" aria-hidden="true"></i-->
+        <i class="fa fa-github-square" id="gB" aria-hidden="true">
+            <a href="https://github.com/paolocromerazz/Weather" target="_blank">My</a>
+        </i>
+        <i class="fa fa-codepen" id="cpB" aria-hidden="true"> <a href="https://github.com/paolocromerazz/Weather" target="_blank">My</a><a href="https://codepen.io/paolocromerazz/full/ZXeLYM/" target="_blank">Last</a></i>
+        <i class="fa fa-coffee" id="cB" aria-hidden="true"> </i>
+        <!--i class="fa fa-twitter" id="tB" aria-hidden="true"></i-->
+        <!--i class="fa fa-facebook-square" aria-hidden="true"></i-->
+        <!--i class="fa fa-file-pdf-o" id="pB" aria-hidden="true"></i-->
     </div>
-    <div class="up">
-        <h1 class="title">titolo</h1>
+    <div class="block title">
+        <h1>not so local weather</h1>
     </div>
-    <div class="mid">
-        <h2 class="msg">messaggio</h2>
+    <div class="block msg" id="main-block">
+        <h3>Pls. wait a little.</h3>
     </div>
-    <div id="gMap"></div>
+    <div class="block temp" id="temp"></div>
+    <div class="block pos" id="pos"></div>
+    <div class="block weath" id="weath"></div>
+    <div class="block info" id="info"></div>
+    <div class="block gMap" id="gMap"></div>
+
     <script src="./main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCK8rknCGa14KJUuBjtNU-XiV37-dlo8&callback=initMap" async defer></script>
 </body>

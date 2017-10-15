@@ -1,46 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+* {
+    font-family: Roboto, sans-serif;
+}
 
 body {
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(2, 8, 5, 0.82), rgba(163, 136, 183, 0.86));
+    display: grid;
+    grid-template-columns: minmax(1fr, 2fr) minmax(1fr, 2fr) 1fr;
+    grid-template-rows: 30px 50px 100px 100px;
+    grid-gap: 8px;
+    color: #333;
+    background: linear-gradient(90deg, rgb(16, 24, 12), rgba(155, 230, 255, 0.7));
     color: #fff;
-    position: relative;
 }
 
-
-.twitter-share-button {
-    position: absolute;
-    right: 30px;
-    top: 20px;
+a {
+    color: rgb(155, 230, 255);
+    font-size: 12px;
+    text-decoration-style:solid;
 }
 
-.coffee-button {
-    position: absolute;
-    right: 30px;
-    top: 50px;
+#tB,#cB,#gB,#cpB,#temp:hover {
+    cursor: pointer;
+    color: rgb(155, 230, 255);
 }
 
 .title {
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 0;
-    padding: 40px;
-    text-transform: full-width;
+    grid-column: 1;
 }
 
 .msg {
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    font-size: 30px;
-    margin: 0;
-    padding: 40px;
-    text-transform: full-width;
+    grid-column: 1;
+}
+
+.temp {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gMap {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 6;
 }
 
 #gMap {
-    height: 200px;
-    width: 60%;
+    width: 2fr;
+    height: 300px;
+    border: 3px solid rgb(140, 205, 230);
+    border-radius: 6px;
+    visibility: hidden;
 }
+
+/*#viewerContainer {
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}*/
